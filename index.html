@@ -6,23 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chapter 15 layout</title>
     <link rel="stylesheet" href="./layout.css"/>
+
 </head>
 <body>
-    <div id="header">
-        <h1 class="logo"><b>pedal</b> <span>faster</span><br /><b class="magzine">the modern bicycle magazine</b></h1>
-        <div id="navbar">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">news</a></li>
-                <li><a href="">archives</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Pedal <span>Faster</span>
+     <p class="magzine">THE MODERN BYCYCLE MAGAZINE</p>
     </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Archives</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div> <!-- Menu icon (hamburger) -->
+  </nav>
+
+  <!-- Sidebar for small screens -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">News</a>
+    <a href="#">Archives</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
     <div id="content">
-        <div id="feature">
+        <div class="feature__details">
             <img src="./bicycle.jpeg" width="750px" height="700px" class="image"/>
+           <div class="faster__paras">
             <h1 class="heading"><a href="">fixed gear forever</a></h1>
             <p class="date">16 april 2011</p>
             <p class="paragraph1">the veloheld combines minimalist design with superb quality devoid of excessive graphics
@@ -33,40 +47,53 @@
             <p class="paragraph2">for those who want to create their bikes themselves the veloheld frames come in three
                 sizes and two colours and are the perfect starting point continue reading
             </p>
+           </div>
         </div>
      <div class="more__article">
         <div class="more-articles">
             <h3 class="heading2"><a href="">more articles</a></h3>
         </div>
-        <div class="article column1">
-            <img src="./bicycle2.jpg" width="240px" height="150px"/>
-            <p><a href="">on the road: from the fixed gear fanatics point of view</a></p>
-            <p><a href="">brand history: pashleys cycles hand-built in england</a></p>
-            <p><a href="">frame wars: innovations in cycle manufacture and repair</a></p>
-        </div>
-        <div class="article column2">
-            <img src="./bicycle3.jpg" width="240px" height="150px"/>
-            <p><a href="">touring dairy: a sketchbook in your basket</a></p>
-            <p><a href="">top ten newcomers for 2012: a peek at whats to come</a></p>
-            <p><a href="">innertube: the best cycling videos on the web</a></p>
-        </div>
-        <div class="article column3">
-            <img src="./pedal.jpg" width="240px" height="150px"/>
-            <p><a href="">product review: all baskets were not created equal</a></p>
-            <p><a href="">going puble: out &amp; about with the founder of public</a></p>
-            <p><a href="">cycle lane defence: know your rights</a></p>
-        </div>
-        <div class="article column4">
-            <img src="./bicycle4.jpg" width="240px" height="150px"/>
-            <p><a href="">bicycle hall of fame: in 1958 schwinn spitfire</a></p>
-            <p><a href="">reader survey: share your thoughts with us!</a></p>
-            <p><a href="">chain gang: the evolution of the humble bike chain</a></p>
+        <div class="cycle__images">
+            <div class="article column1">
+                <img src="./bicycle2.jpg" width="240px" height="150px"/>
+                <p><a href="">on the road: from the fixed gear fanatics point of view</a></p>
+                <p><a href="">brand history: pashleys cycles hand-built in england</a></p>
+                <p><a href="">frame wars: innovations in cycle manufacture and repair</a></p>
+            </div>
+            <div class="article column2">
+                <img src="./bicycle3.jpg" width="240px" height="150px"/>
+                <p><a href="">touring dairy: a sketchbook in your basket</a></p>
+                <p><a href="">top ten newcomers for 2012: a peek at whats to come</a></p>
+                <p><a href="">innertube: the best cycling videos on the web</a></p>
+            </div>
+            <div class="article column3">
+                <img src="./pedal.jpg" width="240px" height="150px"/>
+                <p><a href="">product review: all baskets were not created equal</a></p>
+                <p><a href="">going puble: out &amp; about with the founder of public</a></p>
+                <p><a href="">cycle lane defence: know your rights</a></p>
+            </div>
+            <div class="article column4">
+                <img src="./bicycle4.jpg" width="240px" height="150px"/>
+                <p><a href="">bicycle hall of fame: in 1958 schwinn spitfire</a></p>
+                <p><a href="">reader survey: share your thoughts with us!</a></p>
+                <p><a href="">chain gang: the evolution of the humble bike chain</a></p>
+            </div>
         </div>
      </div>
     </div>
     <div id="footer">
-        <p class="about"><a href="">legal information</a> | <a href="">privacy policy</a> | <a href="">copyright &copy; pedal faster 2011</a>
-        </p>
+       <a href="" class="about">legal information</a> | <a href="">privacy policy</a> | <a href="">copyright &copy; pedal faster 2011</a>
     </div>
 </body>
+
+<script>
+    function toggleSidebar() {
+  document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeSidebar() {
+  document.getElementById("sidebar").style.width = "0";
+}
+</script>
+
 </html>
