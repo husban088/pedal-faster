@@ -1,0 +1,132 @@
+body{
+  background-color: #303030;
+  color: #665544;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 90%;
+  overflow-x: hidden;
+  font-weight: lighter;
+}
+#header{
+  width: 2000px;
+  position: fixed;
+  top: 0;
+  right: 2px;
+  margin-left: 400px;
+   background-color: black;
+   padding: 0;
+   height: 120px;
+   z-index: 1500;
+}
+#navbar{
+  position: relative;
+  left: 500px;
+  bottom: 60px;
+ }
+
+li{
+  display: inline;
+  margin-left: 40px;
+}
+span{
+  color: orangered;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+.magzine{
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #efefef;
+  font-size: 37%;
+  position: relative;
+  bottom: 5px;
+}
+b{
+  color: #efefef;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+.image{
+  margin-top: 10px;
+  margin-right: 330px;
+}
+a{
+  text-decoration: none;
+  color: #b5c1ad;
+  font-weight: lighter;
+}
+a:hover{   
+  color: #ffffff;
+  text-decoration: underline;
+}
+.heading{
+  position: relative;
+  left: 150px;
+  bottom: 530px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 240%;
+  font-weight: normal;
+}
+.date{
+  font-size: 75%;
+  position: relative;
+  left: 200px;
+  bottom: 500px;
+  color: #b5c1ad;
+}
+.paragraph1, .paragraph2{
+  width: 400px;
+  font-size: 90%;
+  line-height: 1.4em;
+  position: relative;
+  left: 750px;
+  bottom: 460px;
+  color: #efefef;
+}
+.heading2{
+  text-align: left;
+  margin-left: 140px;
+  border-top: 1px solid black;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.article p {
+  width: 250px;
+  border-bottom: 1px solid black;
+  font-size: 75%;
+  letter-spacing: 2px;
+}
+.article{
+  float: left;
+  margin-left: 75px;
+  position: relative;
+  left: 88px;
+}
+
+.about{
+   font-size: 110%;
+  position: relative;
+  top: 320px;
+  right: 840px;
+  white-space: pre;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about a {
+  color: #807c72;
+}
+.about a:hover {
+  color: #ffffff;
+}
+
+.more__article {
+  transform: translateX(-5rem);
+  margin-top: -12rem;
+}
+
+.article {
+  transform: translateX(-2rem);
+}
